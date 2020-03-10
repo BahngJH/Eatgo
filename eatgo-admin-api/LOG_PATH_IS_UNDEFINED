@@ -1,0 +1,10 @@
+INFO  10:46:52.962 [main StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplicationTests on DESKTOP-0K8LT1G with PID 16100 (started by JiHoon in D:\GitHubProject\eatgo\eatgo-admin-api)
+INFO  10:46:52.984 [main SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:46:56.167 [main RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  10:46:56.488 [main RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 253ms. Found 3 JPA repository interfaces.
+INFO  10:46:58.247 [main PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  10:46:59.412 [main HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  10:47:00.717 [main HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  10:47:00.974 [main LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  10:47:01.401 [main Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  10:47:02.145 [main JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}

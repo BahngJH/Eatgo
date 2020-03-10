@@ -1,0 +1,29 @@
+INFO  14:43:40.120 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoApplication on DESKTOP-0K8LT1G with PID 13572 (D:\GitHubProject\eatgo\eatgo-api\build\classes\java\main started by JiHoon in D:\GitHubProject\eatgo)
+INFO  14:43:40.125 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  14:43:41.657 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  14:43:41.783 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 108ms. Found 3 JPA repository interfaces.
+INFO  14:43:42.407 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  14:43:43.434 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 9090 (http)
+INFO  14:43:43.450 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-9090"]
+INFO  14:43:43.451 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  14:43:43.452 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  14:43:43.675 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  14:43:43.676 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3450 ms
+INFO  14:43:43.867 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  14:43:44.281 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  14:43:44.291 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+INFO  14:43:44.581 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  14:43:44.763 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  14:43:45.056 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  14:43:45.332 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  14:43:46.617 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  14:43:46.627 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  14:43:46.652 [restartedMain OptionalLiveReloadServer.java:58] startServer - LiveReload server is running on port 35729
+WARN  14:43:47.637 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  14:43:47.860 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  14:43:48.427 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-9090"]
+INFO  14:43:48.460 [restartedMain TomcatWebServer.java:204] start - Tomcat started on port(s): 9090 (http) with context path ''
+INFO  14:43:48.463 [restartedMain StartupInfoLogger.java:61] logStarted - Started EatgoApplication in 9.173 seconds (JVM running for 9.986)

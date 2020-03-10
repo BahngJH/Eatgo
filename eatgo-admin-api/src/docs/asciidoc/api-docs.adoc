@@ -1,0 +1,10 @@
+
+
+= 밥집
+
+include::{snippets}/list-api/curl-request.adoc[]
+include::{snippets}/list-api/http-request.adoc[]
+include::{snippets}/list-api/httpie-request.adoc[]
+include::{snippets}/list-api/http-response.adoc[]
+
+
