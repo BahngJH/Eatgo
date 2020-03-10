@@ -3,9 +3,7 @@ package kr.co.fastcampus.eatgo.application;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.verify;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,16 +84,8 @@ class RestaurantServiceTests {
   @Test
   public void getRestaurantWithExisted() {
     Restaurant restaurant = restaurantService.getRestaurant(1004L);
-    verify(menuItemRepository).findAllByRestaurantId(eq(1004L));
-    verify(reviewRepository).findAllByRestaurantId(eq(1004L));
 
     assertThat(restaurant.getId(), is(1004L));
-    MenuItem menuItem = restaurant.getMenuItems().get(0);
-    assertThat(menuItem.getName(), is("Kimchi"));
-
-    Review review = restaurant.getReviews().get(0);
-
-    assertThat(review.getDescription(), is("Bad"));
   }
 
   @Test
@@ -129,7 +119,7 @@ class RestaurantServiceTests {
         .address("Seoul")
         .build();
 
-    given(restaurantRepository.findById(1004L)).willReturn(java.util.Optional.of(restaurant));
+    given(restaurantRepository.findById(1004L)).willReturn(Optional.of(restaurant));
 
     restaurantService.updateRestaurant(1004L, "Sool zip", "Busan");
 

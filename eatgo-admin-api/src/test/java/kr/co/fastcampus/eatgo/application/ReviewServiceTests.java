@@ -1,8 +1,11 @@
 package kr.co.fastcampus.eatgo.application;
 
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.mockito.BDDMockito.given;
 
+import java.util.ArrayList;
+import java.util.List;
 import kr.co.fastcampus.eatgo.domain.Review;
 import kr.co.fastcampus.eatgo.domain.ReviewRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,14 +28,17 @@ class ReviewServiceTests {
   }
 
   @Test
-  public void addReview() {
-    Review review = Review.builder()
-        .name("JOKER")
-        .score(3)
-        .description("맛있다.")
-        .build();
-    reviewService.addReview(review);
+  public void getReviews() {
+    List<Review> mockReviews = new ArrayList<>();
+    mockReviews.add(Review.builder().description("Cool!").build());
 
-    verify(reviewRepository).save(any());
+    given(reviewRepository.findAll()).willReturn(mockReviews);
+
+    List<Review> reviews = reviewService.getReviews();
+
+    Review review = reviews.get(0);
+
+    assertThat(review.getDescription(), is("Cool!"));
   }
+
 }

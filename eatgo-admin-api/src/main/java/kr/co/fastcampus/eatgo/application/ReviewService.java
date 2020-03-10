@@ -1,5 +1,6 @@
 package kr.co.fastcampus.eatgo.application;
 
+import java.util.List;
 import kr.co.fastcampus.eatgo.domain.Review;
 import kr.co.fastcampus.eatgo.domain.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,12 @@ public class ReviewService {
     this.reviewRepository = reviewRepository;
   }
 
-  public Review addReview(Review review) {
+  public Review addReview(Long restaurantId, Review review) {
+    review.setRestaurantId(restaurantId);
     return reviewRepository.save(review);
+  }
+
+  public List<Review> getReviews() {
+    return reviewRepository.findAll();
   }
 }

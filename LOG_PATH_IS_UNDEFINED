@@ -1,29 +1,523 @@
-INFO  14:43:40.120 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoApplication on DESKTOP-0K8LT1G with PID 13572 (D:\GitHubProject\eatgo\eatgo-api\build\classes\java\main started by JiHoon in D:\GitHubProject\eatgo)
-INFO  14:43:40.125 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
-INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
-INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-INFO  14:43:40.225 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-INFO  14:43:41.657 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  14:43:41.783 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 108ms. Found 3 JPA repository interfaces.
-INFO  14:43:42.407 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-INFO  14:43:43.434 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 9090 (http)
-INFO  14:43:43.450 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-9090"]
-INFO  14:43:43.451 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
-INFO  14:43:43.452 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
-INFO  14:43:43.675 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
-INFO  14:43:43.676 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3450 ms
-INFO  14:43:43.867 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
-INFO  14:43:44.281 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
-INFO  14:43:44.291 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-INFO  14:43:44.581 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  14:43:44.763 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
-INFO  14:43:45.056 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-INFO  14:43:45.332 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-INFO  14:43:46.617 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  14:43:46.627 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-INFO  14:43:46.652 [restartedMain OptionalLiveReloadServer.java:58] startServer - LiveReload server is running on port 35729
-WARN  14:43:47.637 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  14:43:47.860 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
-INFO  14:43:48.427 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-9090"]
-INFO  14:43:48.460 [restartedMain TomcatWebServer.java:204] start - Tomcat started on port(s): 9090 (http) with context path ''
-INFO  14:43:48.463 [restartedMain StartupInfoLogger.java:61] logStarted - Started EatgoApplication in 9.173 seconds (JVM running for 9.986)
+INFO  10:43:47.653 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 15116 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  10:43:48.233 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:43:48.436 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  10:43:48.436 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  10:43:48.436 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  10:43:52.472 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  10:43:52.754 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 258ms. Found 3 JPA repository interfaces.
+INFO  10:43:54.060 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  10:43:55.930 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  10:43:55.954 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  10:43:55.955 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  10:43:55.956 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  10:43:56.338 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  10:43:56.341 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 7905 ms
+INFO  10:43:56.795 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  10:43:57.993 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  10:43:57.996 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  10:44:20.515 [main StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplicationTests on DESKTOP-0K8LT1G with PID 6180 (started by JiHoon in D:\GitHubProject\eatgo)
+INFO  10:44:20.583 [main SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:44:22.626 [main RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  10:44:22.797 [main RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 152ms. Found 3 JPA repository interfaces.
+INFO  10:44:23.663 [main PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  10:44:24.220 [main HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  10:44:26.182 [main HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  10:44:26.304 [main LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  10:44:26.470 [main Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  10:44:26.845 [main JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  10:44:27.705 [main Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  10:44:29.079 [main JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  10:44:29.097 [main AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  10:44:31.004 [main JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  10:44:31.442 [main ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  10:44:32.064 [main StartupInfoLogger.java:61] logStarted - Started EatgoAdminApplicationTests in 12.62 seconds (JVM running for 16.317)
+INFO  10:44:32.519 [main AbstractTestContextBootstrapper.java:308] buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.co.fastcampus.eatgo.interfaces.ReviewControllerTests], using SpringBootContextLoader
+INFO  10:44:32.519 [main AbstractContextLoader.java:264] generateDefaultLocations - Could not detect default resource locations for test class [kr.co.fastcampus.eatgo.interfaces.ReviewControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  10:44:32.519 [main AnnotationConfigContextLoaderUtils.java:83] detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [kr.co.fastcampus.eatgo.interfaces.ReviewControllerTests]: ReviewControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  10:44:32.586 [main SpringBootTestContextBootstrapper.java:235] getOrFindConfigurationClasses - Found @SpringBootConfiguration kr.co.fastcampus.eatgo.EatgoCustomerApplication for test class kr.co.fastcampus.eatgo.interfaces.ReviewControllerTests
+INFO  10:44:32.594 [main AbstractTestContextBootstrapper.java:248] getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  10:44:32.595 [main AbstractTestContextBootstrapper.java:177] getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@118a4d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6cb194f5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@74b7497b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74f649a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@308c65e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50fa5938, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e482ecd, org.springframework.test.context.event.EventPublishingTestExecutionListener@58b5f7d2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@bc52a41, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@9f48198, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5615f82d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@21698e5a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3dc2f14]
+INFO  10:44:32.685 [main StartupInfoLogger.java:55] logStarting - Starting ReviewControllerTests on DESKTOP-0K8LT1G with PID 6180 (started by JiHoon in D:\GitHubProject\eatgo)
+INFO  10:44:32.685 [main SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:44:33.358 [main ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  10:44:33.626 [main MockServletContext.java:455] log - Initializing Spring TestDispatcherServlet ''
+INFO  10:44:33.629 [main FrameworkServlet.java:525] initServletBean - Initializing Servlet ''
+INFO  10:44:33.646 [main FrameworkServlet.java:547] initServletBean - Completed initialization in 16 ms
+INFO  10:44:33.687 [main StartupInfoLogger.java:61] logStarted - Started ReviewControllerTests in 1.088 seconds (JVM running for 17.94)
+WARN  10:44:34.095 [main AbstractHandlerExceptionResolver.java:199] logException - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<?> kr.co.fastcampus.eatgo.interfaces.ReviewController.create(java.lang.Long,kr.co.fastcampus.eatgo.domain.Review) throws java.net.URISyntaxException with 3 errors: [Field error in object 'review' on field 'description': rejected value [null]; codes [NotEmpty.review.description,NotEmpty.description,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [review.description,description]; arguments []; default message [description]]; default message [must not be empty]] [Field error in object 'review' on field 'score': rejected value [null]; codes [NotNull.review.score,NotNull.score,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [review.score,score]; arguments []; default message [score]]; default message [must not be null]] [Field error in object 'review' on field 'name': rejected value [null]; codes [NotEmpty.review.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [review.name,name]; arguments []; default message [name]]; default message [must not be empty]] ]
+INFO  10:44:34.142 [main AbstractTestContextBootstrapper.java:308] buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.co.fastcampus.eatgo.interfaces.RestaurantControllerTests], using SpringBootContextLoader
+INFO  10:44:34.153 [main AbstractContextLoader.java:264] generateDefaultLocations - Could not detect default resource locations for test class [kr.co.fastcampus.eatgo.interfaces.RestaurantControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  10:44:34.153 [main AnnotationConfigContextLoaderUtils.java:83] detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [kr.co.fastcampus.eatgo.interfaces.RestaurantControllerTests]: RestaurantControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  10:44:34.153 [main SpringBootTestContextBootstrapper.java:235] getOrFindConfigurationClasses - Found @SpringBootConfiguration kr.co.fastcampus.eatgo.EatgoCustomerApplication for test class kr.co.fastcampus.eatgo.interfaces.RestaurantControllerTests
+INFO  10:44:34.153 [main AbstractTestContextBootstrapper.java:248] getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  10:44:34.153 [main AbstractTestContextBootstrapper.java:177] getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@72a0a60d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65930e02, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@85c3522, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@18be3205, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6fd97fd1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@12c78f36, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7bdb4d69, org.springframework.test.context.event.EventPublishingTestExecutionListener@129c760d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@361fa478, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@180f33b2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@391e85df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@48c3a0ef, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3b4f1eb]
+INFO  10:44:34.233 [main StartupInfoLogger.java:55] logStarting - Starting RestaurantControllerTests on DESKTOP-0K8LT1G with PID 6180 (started by JiHoon in D:\GitHubProject\eatgo)
+INFO  10:44:34.235 [main SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:44:34.822 [main ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  10:44:35.132 [main MockServletContext.java:455] log - Initializing Spring TestDispatcherServlet ''
+INFO  10:44:35.135 [main FrameworkServlet.java:525] initServletBean - Initializing Servlet ''
+INFO  10:44:35.160 [main FrameworkServlet.java:547] initServletBean - Completed initialization in 23 ms
+INFO  10:44:35.191 [main StartupInfoLogger.java:61] logStarted - Started RestaurantControllerTests in 1.03 seconds (JVM running for 19.443)
+WARN  10:44:35.342 [main AbstractHandlerExceptionResolver.java:199] logException - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> kr.co.fastcampus.eatgo.interfaces.RestaurantController.create(kr.co.fastcampus.eatgo.domain.Restaurant) throws java.net.URISyntaxException with 2 errors: [Field error in object 'restaurant' on field 'name': rejected value []; codes [NotEmpty.restaurant.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.name,name]; arguments []; default message [name]]; default message [must not be empty]] [Field error in object 'restaurant' on field 'address': rejected value []; codes [NotEmpty.restaurant.address,NotEmpty.address,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.address,address]; arguments []; default message [address]]; default message [must not be empty]] ]
+WARN  10:44:35.525 [main AbstractHandlerExceptionResolver.java:199] logException - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public java.lang.String kr.co.fastcampus.eatgo.interfaces.RestaurantController.update(java.lang.Long,kr.co.fastcampus.eatgo.domain.Restaurant) with 2 errors: [Field error in object 'restaurant' on field 'name': rejected value []; codes [NotEmpty.restaurant.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.name,name]; arguments []; default message [name]]; default message [must not be empty]] [Field error in object 'restaurant' on field 'address': rejected value []; codes [NotEmpty.restaurant.address,NotEmpty.address,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.address,address]; arguments []; default message [address]]; default message [must not be empty]] ]
+WARN  10:44:35.555 [main AbstractHandlerExceptionResolver.java:199] logException - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public java.lang.String kr.co.fastcampus.eatgo.interfaces.RestaurantController.update(java.lang.Long,kr.co.fastcampus.eatgo.domain.Restaurant) with 2 errors: [Field error in object 'restaurant' on field 'address': rejected value []; codes [NotEmpty.restaurant.address,NotEmpty.address,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.address,address]; arguments []; default message [address]]; default message [must not be empty]] [Field error in object 'restaurant' on field 'name': rejected value []; codes [NotEmpty.restaurant.name,NotEmpty.name,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [restaurant.name,name]; arguments []; default message [name]]; default message [must not be empty]] ]
+INFO  10:44:35.579 [main AbstractTestContextBootstrapper.java:308] buildDefaultMergedContextConfiguration - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.co.fastcampus.eatgo.interfaces.MenuItemControllerTests], using SpringBootContextLoader
+INFO  10:44:35.584 [main AbstractContextLoader.java:264] generateDefaultLocations - Could not detect default resource locations for test class [kr.co.fastcampus.eatgo.interfaces.MenuItemControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  10:44:35.584 [main AnnotationConfigContextLoaderUtils.java:83] detectDefaultConfigurationClasses - Could not detect default configuration classes for test class [kr.co.fastcampus.eatgo.interfaces.MenuItemControllerTests]: MenuItemControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  10:44:35.586 [main SpringBootTestContextBootstrapper.java:235] getOrFindConfigurationClasses - Found @SpringBootConfiguration kr.co.fastcampus.eatgo.EatgoCustomerApplication for test class kr.co.fastcampus.eatgo.interfaces.MenuItemControllerTests
+INFO  10:44:35.592 [main AbstractTestContextBootstrapper.java:248] getDefaultTestExecutionListenerClassNames - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  10:44:35.592 [main AbstractTestContextBootstrapper.java:177] getTestExecutionListeners - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@543ba2e1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71458178, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@723c5f86, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@301e5d23, org.springframework.test.context.support.DirtiesContextTestExecutionListener@393bcd6b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64a8d575, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@74787609, org.springframework.test.context.event.EventPublishingTestExecutionListener@36cdcae0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@51fa09c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@73db7df0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@44a485bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1c66cd02, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d535b78]
+INFO  10:44:35.677 [main StartupInfoLogger.java:55] logStarting - Starting MenuItemControllerTests on DESKTOP-0K8LT1G with PID 6180 (started by JiHoon in D:\GitHubProject\eatgo)
+INFO  10:44:35.677 [main SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  10:44:36.204 [main ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  10:44:36.414 [main MockServletContext.java:455] log - Initializing Spring TestDispatcherServlet ''
+INFO  10:44:36.414 [main FrameworkServlet.java:525] initServletBean - Initializing Servlet ''
+INFO  10:44:36.426 [main FrameworkServlet.java:547] initServletBean - Completed initialization in 11 ms
+INFO  10:44:36.445 [main StartupInfoLogger.java:61] logStarted - Started MenuItemControllerTests in 0.849 seconds (JVM running for 20.696)
+INFO  10:44:36.468 [SpringContextShutdownHook ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  10:44:36.469 [SpringContextShutdownHook ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  10:44:36.470 [SpringContextShutdownHook AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  10:44:36.471 [SpringContextShutdownHook ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  10:44:36.472 [SpringContextShutdownHook ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  10:44:36.475 [SpringContextShutdownHook HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  10:44:36.497 [SpringContextShutdownHook HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.
+INFO  15:31:49.604 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 16596 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  15:31:49.717 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  15:31:49.938 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  15:31:49.938 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  15:31:49.938 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  15:31:52.539 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  15:31:52.667 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 111ms. Found 3 JPA repository interfaces.
+INFO  15:31:53.384 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  15:31:55.035 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  15:31:55.063 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  15:31:55.063 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  15:31:55.063 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  15:31:55.374 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  15:31:55.374 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5436 ms
+INFO  15:31:55.555 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  15:31:56.595 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  15:31:56.614 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  15:31:57.384 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  15:31:57.553 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  15:31:57.831 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  15:31:58.185 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  15:31:59.674 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  15:31:59.674 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  15:32:01.674 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  15:32:01.855 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  15:32:02.368 [restartedMain OptionalLiveReloadServer.java:58] startServer - LiveReload server is running on port 35729
+INFO  15:32:02.408 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  15:32:02.486 [restartedMain TomcatWebServer.java:204] start - Tomcat started on port(s): 8081 (http) with context path ''
+INFO  15:32:02.486 [restartedMain StartupInfoLogger.java:61] logStarted - Started EatgoAdminApplication in 14.288 seconds (JVM running for 15.928)
+INFO  15:36:25.507 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 17736 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  15:36:25.663 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  15:36:25.773 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  15:36:25.773 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  15:36:25.773 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  15:36:28.098 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  15:36:28.363 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 225ms. Found 3 JPA repository interfaces.
+INFO  15:36:29.097 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  15:36:30.175 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  15:36:30.191 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  15:36:30.191 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  15:36:30.191 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  15:36:30.488 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  15:36:30.488 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4715 ms
+INFO  15:36:30.722 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  15:36:31.706 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  15:36:31.722 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  15:36:32.003 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  15:36:32.190 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  15:36:32.487 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  15:36:32.893 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  15:36:34.190 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  15:36:34.205 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  15:36:35.596 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  15:36:35.768 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+WARN  15:36:36.096 [restartedMain OptionalLiveReloadServer.java:61] startServer - Unable to start LiveReload server
+INFO  15:36:36.127 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  15:36:36.143 [restartedMain DirectJDKLog.java:173] log - Pausing ProtocolHandler ["http-nio-8081"]
+INFO  15:36:36.143 [restartedMain DirectJDKLog.java:173] log - Stopping service [Tomcat]
+WARN  15:36:36.143 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+WARN  15:36:36.143 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.SocketInputStream.socketRead0(Native Method)
+ java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+ java.net.SocketInputStream.read(SocketInputStream.java:171)
+ java.net.SocketInputStream.read(SocketInputStream.java:141)
+ com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+ com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+ com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+ java.io.FilterInputStream.read(FilterInputStream.java:133)
+ com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+ com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+ com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:533)
+ com.mysql.cj.protocol.a.NativeProtocol.readServerCapabilities(NativeProtocol.java:491)
+ com.mysql.cj.protocol.a.NativeProtocol.beforeHandshake(NativeProtocol.java:381)
+ com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1338)
+ com.mysql.cj.NativeSession.connect(NativeSession.java:157)
+ com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+ com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+ com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+ com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+ com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+ com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:353)
+ com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+ com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+ com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:727)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:713)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+INFO  15:36:36.158 [restartedMain DirectJDKLog.java:173] log - Stopping ProtocolHandler ["http-nio-8081"]
+INFO  15:36:36.158 [restartedMain DirectJDKLog.java:173] log - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  15:36:36.158 [restartedMain ConditionEvaluationReportLoggingListener.java:136] logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 15:36:36.158 [restartedMain LoggingFailureAnalysisReporter.java:40] report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+INFO  15:36:36.158 [restartedMain ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  15:36:36.158 [restartedMain AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  15:36:36.174 [restartedMain HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  15:36:36.533 [restartedMain HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.
+INFO  15:38:22.342 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 6760 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  15:38:22.373 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  15:38:22.498 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  15:38:22.498 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  15:38:22.498 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  15:38:25.045 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  15:38:25.216 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 150ms. Found 3 JPA repository interfaces.
+INFO  15:38:25.919 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  15:38:27.185 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  15:38:27.216 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  15:38:27.216 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  15:38:27.216 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  15:38:27.497 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  15:38:27.497 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4999 ms
+INFO  15:38:27.685 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  15:38:28.513 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  15:38:28.513 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  15:38:28.747 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  15:38:28.872 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  15:38:29.169 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  15:38:29.465 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  15:38:30.575 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  15:38:30.575 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  15:38:31.949 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  15:38:32.199 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+INFO  15:38:32.605 [restartedMain OptionalLiveReloadServer.java:58] startServer - LiveReload server is running on port 35729
+INFO  15:38:32.637 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  15:38:32.715 [restartedMain TomcatWebServer.java:204] start - Tomcat started on port(s): 8081 (http) with context path ''
+INFO  15:38:32.715 [restartedMain StartupInfoLogger.java:61] logStarted - Started EatgoAdminApplication in 11.628 seconds (JVM running for 12.794)
+INFO  15:40:49.043 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 14848 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  15:40:49.137 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  15:40:49.266 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  15:40:49.266 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  15:40:49.266 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  15:40:52.731 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  15:40:53.035 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 268ms. Found 3 JPA repository interfaces.
+INFO  15:40:54.218 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  15:40:56.518 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  15:40:56.549 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  15:40:56.551 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  15:40:56.551 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  15:40:57.019 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  15:40:57.020 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 7753 ms
+INFO  15:40:57.346 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  15:40:58.380 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  15:40:58.391 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  15:40:59.250 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  15:40:59.578 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  15:41:00.227 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  15:41:01.219 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  15:41:04.126 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  15:41:04.151 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  15:41:06.703 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  15:41:07.516 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+WARN  15:41:08.460 [restartedMain OptionalLiveReloadServer.java:61] startServer - Unable to start LiveReload server
+INFO  15:41:08.510 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  15:41:08.536 [restartedMain DirectJDKLog.java:173] log - Pausing ProtocolHandler ["http-nio-8081"]
+INFO  15:41:08.536 [restartedMain DirectJDKLog.java:173] log - Stopping service [Tomcat]
+WARN  15:41:08.549 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+WARN  15:41:08.550 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+INFO  15:41:08.553 [restartedMain DirectJDKLog.java:173] log - Stopping ProtocolHandler ["http-nio-8081"]
+INFO  15:41:08.559 [restartedMain DirectJDKLog.java:173] log - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  15:41:08.565 [restartedMain ConditionEvaluationReportLoggingListener.java:136] logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 15:41:08.575 [restartedMain LoggingFailureAnalysisReporter.java:40] report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+INFO  15:41:08.582 [restartedMain ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  15:41:08.583 [restartedMain AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  15:41:08.592 [restartedMain HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  15:41:08.614 [restartedMain HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.
+INFO  21:19:15.686 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 10020 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  21:19:15.820 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  21:19:15.958 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  21:19:15.960 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  21:19:15.968 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+WARN  21:19:17.873 [restartedMain ClassPathMapperScanner.java:166] doScan - No MyBatis mapper was found in '[kr.co.fastcampus.eatgo]' package. Please check your configuration.
+INFO  21:19:18.010 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  21:19:18.149 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 120ms. Found 3 JPA repository interfaces.
+INFO  21:19:18.781 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  21:19:19.865 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  21:19:19.883 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  21:19:19.891 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  21:19:19.892 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  21:19:20.148 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  21:19:20.158 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4190 ms
+INFO  21:19:20.288 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  21:19:21.314 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  21:19:21.319 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  21:19:21.659 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  21:19:21.819 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  21:19:22.123 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  21:19:22.437 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  21:19:23.648 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  21:19:23.655 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  21:19:24.468 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  21:19:24.696 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+WARN  21:19:25.572 [restartedMain OptionalLiveReloadServer.java:61] startServer - Unable to start LiveReload server
+INFO  21:19:25.607 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  21:19:25.621 [restartedMain DirectJDKLog.java:173] log - Pausing ProtocolHandler ["http-nio-8081"]
+INFO  21:19:25.624 [restartedMain DirectJDKLog.java:173] log - Stopping service [Tomcat]
+WARN  21:19:25.631 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+WARN  21:19:25.632 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+INFO  21:19:25.632 [restartedMain DirectJDKLog.java:173] log - Stopping ProtocolHandler ["http-nio-8081"]
+INFO  21:19:25.632 [restartedMain DirectJDKLog.java:173] log - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  21:19:25.639 [restartedMain ConditionEvaluationReportLoggingListener.java:136] logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 21:19:25.640 [restartedMain LoggingFailureAnalysisReporter.java:40] report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+INFO  21:19:25.640 [restartedMain ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  21:19:25.647 [restartedMain AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  21:19:25.650 [restartedMain HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  21:19:25.671 [restartedMain HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.
+INFO  21:20:31.318 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 15004 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  21:20:31.346 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  21:20:31.621 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  21:20:31.626 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  21:20:31.626 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+WARN  21:20:33.687 [restartedMain ClassPathMapperScanner.java:166] doScan - No MyBatis mapper was found in '[kr.co.fastcampus.eatgo]' package. Please check your configuration.
+INFO  21:20:33.790 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  21:20:33.925 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 114ms. Found 3 JPA repository interfaces.
+INFO  21:20:34.593 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  21:20:35.694 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  21:20:35.710 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  21:20:35.714 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  21:20:35.715 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  21:20:36.051 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  21:20:36.051 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4425 ms
+INFO  21:20:36.208 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  21:20:37.011 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  21:20:37.030 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  21:20:37.393 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  21:20:37.544 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  21:20:37.868 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  21:20:38.188 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  21:20:39.540 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  21:20:39.555 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  21:20:40.474 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  21:20:40.672 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+WARN  21:20:41.650 [restartedMain OptionalLiveReloadServer.java:61] startServer - Unable to start LiveReload server
+INFO  21:20:41.686 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  21:20:41.704 [restartedMain DirectJDKLog.java:173] log - Pausing ProtocolHandler ["http-nio-8081"]
+INFO  21:20:41.704 [restartedMain DirectJDKLog.java:173] log - Stopping service [Tomcat]
+WARN  21:20:41.710 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+WARN  21:20:41.711 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+INFO  21:20:41.713 [restartedMain DirectJDKLog.java:173] log - Stopping ProtocolHandler ["http-nio-8081"]
+INFO  21:20:41.714 [restartedMain DirectJDKLog.java:173] log - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  21:20:41.719 [restartedMain ConditionEvaluationReportLoggingListener.java:136] logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 21:20:41.722 [restartedMain LoggingFailureAnalysisReporter.java:40] report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+INFO  21:20:41.725 [restartedMain ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  21:20:41.726 [restartedMain AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  21:20:41.732 [restartedMain HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  21:20:41.750 [restartedMain HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.
+INFO  21:25:55.888 [restartedMain StartupInfoLogger.java:55] logStarting - Starting EatgoAdminApplication on DESKTOP-0K8LT1G with PID 9792 (D:\GitHubProject\eatgo\eatgo-admin-api\out\production\classes started by JiHoon in D:\GitHubProject\eatgo)
+INFO  21:25:55.977 [restartedMain SpringApplication.java:651] logStartupProfileInfo - No active profile set, falling back to default profiles: default
+INFO  21:25:56.322 [restartedMain DeferredLog.java:225] logTo - The Class-Path manifest attribute in C:\Users\wpxm2\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.2\5528bc882ea499a09d720b42af11785c4fc6be2a\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/txw2-2.3.2.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/istack-commons-runtime-3.0.8.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/stax-ex-1.8.1.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/FastInfoset-1.2.16.jar,file:/C:/Users/wpxm2/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.2/5528bc882ea499a09d720b42af11785c4fc6be2a/jakarta.activation-api-1.2.1.jar
+INFO  21:25:56.322 [restartedMain DeferredLog.java:225] logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  21:25:56.322 [restartedMain DeferredLog.java:225] logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+WARN  21:25:58.639 [restartedMain ClassPathMapperScanner.java:166] doScan - No MyBatis mapper was found in '[kr.co.fastcampus.eatgo]' package. Please check your configuration.
+INFO  21:25:58.730 [restartedMain RepositoryConfigurationDelegate.java:127] registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  21:25:58.868 [restartedMain RepositoryConfigurationDelegate.java:187] registerRepositoriesIn - Finished Spring Data repository scanning in 116ms. Found 3 JPA repository interfaces.
+INFO  21:25:59.465 [restartedMain PostProcessorRegistrationDelegate.java:330] postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+INFO  21:26:00.591 [restartedMain TomcatWebServer.java:92] initialize - Tomcat initialized with port(s): 8081 (http)
+INFO  21:26:00.614 [restartedMain DirectJDKLog.java:173] log - Initializing ProtocolHandler ["http-nio-8081"]
+INFO  21:26:00.620 [restartedMain DirectJDKLog.java:173] log - Starting service [Tomcat]
+INFO  21:26:00.621 [restartedMain DirectJDKLog.java:173] log - Starting Servlet engine: [Apache Tomcat/9.0.29]
+INFO  21:26:00.877 [restartedMain DirectJDKLog.java:173] log - Initializing Spring embedded WebApplicationContext
+INFO  21:26:00.877 [restartedMain ServletWebServerApplicationContext.java:284] prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4555 ms
+INFO  21:26:01.030 [restartedMain HikariDataSource.java:110] getConnection - HikariPool-1 - Starting...
+INFO  21:26:02.042 [restartedMain HikariDataSource.java:123] getConnection - HikariPool-1 - Start completed.
+INFO  21:26:02.062 [restartedMain H2ConsoleAutoConfiguration.java:74] lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://34.84.105.154:3306/wancs?characterEncoding=utf8'
+INFO  21:26:02.329 [restartedMain LogHelper.java:31] logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  21:26:02.473 [restartedMain Version.java:46] logVersion - HHH000412: Hibernate Core {5.4.9.Final}
+INFO  21:26:02.785 [restartedMain JavaReflectionManager.java:49] <clinit> - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  21:26:03.149 [restartedMain Dialect.java:172] <init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+INFO  21:26:04.434 [restartedMain JtaPlatformInitiator.java:52] initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  21:26:04.434 [restartedMain AbstractEntityManagerFactoryBean.java:416] buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  21:26:05.231 [restartedMain JpaBaseConfiguration.java:220] openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  21:26:05.429 [restartedMain ExecutorConfigurationSupport.java:171] initialize - Initializing ExecutorService 'applicationTaskExecutor'
+WARN  21:26:06.235 [restartedMain OptionalLiveReloadServer.java:61] startServer - Unable to start LiveReload server
+INFO  21:26:06.264 [restartedMain DirectJDKLog.java:173] log - Starting ProtocolHandler ["http-nio-8081"]
+INFO  21:26:06.280 [restartedMain DirectJDKLog.java:173] log - Pausing ProtocolHandler ["http-nio-8081"]
+INFO  21:26:06.280 [restartedMain DirectJDKLog.java:173] log - Stopping service [Tomcat]
+WARN  21:26:06.287 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+WARN  21:26:06.287 [restartedMain DirectJDKLog.java:173] log - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+INFO  21:26:06.290 [restartedMain DirectJDKLog.java:173] log - Stopping ProtocolHandler ["http-nio-8081"]
+INFO  21:26:06.290 [restartedMain DirectJDKLog.java:173] log - Destroying ProtocolHandler ["http-nio-8081"]
+INFO  21:26:06.295 [restartedMain ConditionEvaluationReportLoggingListener.java:136] logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 21:26:06.296 [restartedMain LoggingFailureAnalysisReporter.java:40] report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+INFO  21:26:06.302 [restartedMain ExecutorConfigurationSupport.java:208] shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  21:26:06.304 [restartedMain AbstractEntityManagerFactoryBean.java:598] destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  21:26:06.307 [restartedMain HikariDataSource.java:350] close - HikariPool-1 - Shutdown initiated...
+INFO  21:26:06.326 [restartedMain HikariDataSource.java:352] close - HikariPool-1 - Shutdown completed.

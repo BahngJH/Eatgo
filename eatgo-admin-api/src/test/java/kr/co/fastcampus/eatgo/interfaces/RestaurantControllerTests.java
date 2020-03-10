@@ -14,10 +14,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import kr.co.fastcampus.eatgo.application.RestaurantService;
-import kr.co.fastcampus.eatgo.domain.MenuItem;
 import kr.co.fastcampus.eatgo.domain.Restaurant;
 import kr.co.fastcampus.eatgo.domain.RestaurantNotFoundException;
 import org.junit.jupiter.api.Test;
@@ -61,32 +59,19 @@ public class RestaurantControllerTests {
   }
 
   @Test
-  public void detail() throws Exception {
-    Restaurant restaurant1 = Restaurant.builder()
+  public void detailWithExisted() throws Exception {
+    Restaurant restaurant = Restaurant.builder()
         .id(1004L)
         .name("JOKER House")
         .address("Seoul")
         .build();
-    restaurant1.setMenuItems(Arrays.asList(MenuItem.builder()
-        .name("Kimchi")
-        .build()));
-    Restaurant restaurant2 = Restaurant.builder()
-        .id(2020L)
-        .name("Cyber Food")
-        .address("Seoul")
-        .build();
-    given(restaurantService.getRestaurant(1004L)).willReturn(restaurant1);
-    given(restaurantService.getRestaurant(2020L)).willReturn(restaurant2);
+
+    given(restaurantService.getRestaurant(1004L)).willReturn(restaurant);
 
     mvc.perform(get("/restaurants/1004"))
         .andExpect(status().isOk())
         .andExpect(content().string(containsString("\"id\":1004")))
-        .andExpect(content().string(containsString("\"name\":\"JOKER House\"")))
-        .andExpect(content().string(containsString("Kimchi")));
-    mvc.perform(get("/restaurants/2020"))
-        .andExpect(status().isOk())
-        .andExpect(content().string(containsString("\"id\":2020")))
-        .andExpect(content().string(containsString("\"name\":\"Cyber Food\"")));
+        .andExpect(content().string(containsString("\"name\":\"JOKER House\"")));
   }
 
   @Test
